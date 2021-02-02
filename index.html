@@ -17,16 +17,16 @@
     </header> 
     <nav style="background-color: #efefef; text-align: center; padding: 5px; font-size: 1.2rem;">
         <ul style="text-decoration: none!; padding: 0;">
-            <li style="padding: 0 8px; display: inline-block;">Inicio</li>
-            <li style="padding: 0 8px; display: inline-block;">Perfil</li>
-            <li style="padding: 0 8px; display: inline-block;">Varios</li>
-            <li style="padding: 0 8px; display: inline-block;">Contacto</li>
+            <li style="padding: 0 8px; display: inline-block;"><a href="#inicio">Inicio</a></li>
+            <li style="padding: 0 8px; display: inline-block;"><a href="#perfil">Perfil</a></li>
+            <li style="padding: 0 8px; display: inline-block;"><a href="#varios">Varios</a></li>
+            <li style="padding: 0 8px; display: inline-block;"><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
     <main>
         
         <section style="padding: 10px; margin: 10px; border-radius: 5px; background-color: #efefef; text-align: center; width: 50%; margin-left: calc(50% / 2);">
-            <h2>Bienvenidos a mi perfil</h2>
+            <h2 id="inicio">Bienvenidos a mi perfil</h2>
             <p>
                 Esta es la primera entrega del curso <strong>Programaci&iacute;n con tecnologias web</strong>, debemos mostrar el uso semantico de los objetos en HTML
             </p>
@@ -35,7 +35,7 @@
             </p>
         </section>
         
-        <section style="padding: 20px; margin: 10px; border-radius: 5px; background-color: #efefef; width: 90%;margin-left: calc(10% / 2);">
+        <section id="perfil" style="padding: 20px; margin: 10px; border-radius: 5px; background-color: #efefef; width: 90%;margin-left: calc(10% / 2);">
             <table border="1">
                 <thead>
                     <tr>
@@ -78,32 +78,45 @@
                 </li>
             </ul>
         </section>
-        <section style="padding: 20px; margin: 10px; border-radius: 5px; background-color: #efefef; width: 90%;margin-left: calc(10% / 2);">
-           <h3>Cancion Favorita</h3>
+        <section id="varios" style="padding: 20px; margin: 10px; border-radius: 5px; background-color: #efefef; width: 90%;margin-left: calc(10% / 2);">
+            <h3>Cancion Favorita</h3>
             <iframe width="100%" height="500" src="https://www.youtube.com/embed/u3VTKvdAuIY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </section>
         <section style="padding: 20px; margin: 10px; border-radius: 5px; background-color: #efefef; width: 90%;margin-left: calc(10% / 2);">
             <h3>Youtuber Favorito</h3>
             <iframe width="100%" height="500" src="https://www.youtube.com/embed/-lCplfylwFM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </section>
+        <section id="contacto" style="padding: 10px; margin: 10px; border-radius: 5px; background-color: #efefef; text-align: center; width: 50%; margin-left: calc(50% / 2);">
+            <h4>Formulario de Contacto</h4>
+            <br/>
+            <label for="name" sr-only="Input Field for your Name">Nombre</label>
+            <input style="margin: 10px;" type="text" id="name">
+            <br/>
+            <label for="email" sr-only="Input Field for your E-mail">Correo</label>
+            <input style="margin: 10px;" type="email" id="email">
+            <br/>
+            <label for="asunto" sr-only="Input Field for the Subject">Asunto</label>
+            <input style="margin: 10px;" type="text" id="asunto">
+            <br/>
+            <textarea style="margin: 10px;" name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+            <br/>
+            <input type="submit" value="Enviar" name="submit">
+            
+        </section>
     </main>
-    <footer style="padding: 10px; margin: 10px; border-radius: 5px; background-color: #efefef; text-align: center; width: 50%; margin-left: calc(50% / 2);">
-        <h4>Formulario de Contacto</h4>
-        <br/>
-        <label for="name" sr-only="Input Field for your Name">Nombre</label>
-        <input style="margin: 10px;" type="text" id="name">
-        <br/>
-        <label for="email" sr-only="Input Field for your E-mail">Correo</label>
-        <input style="margin: 10px;" type="email" id="email">
-        <br/>
-        <label for="asunto" sr-only="Input Field for the Subject">Asunto</label>
-        <input style="margin: 10px;" type="text" id="asunto">
-        <br/>
-        <textarea style="margin: 10px;" name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
-        <br/>
-        <input type="submit" value="Enviar" name="submit">
+    <footer style="padding: 20px; margin: 10px; border-radius: 5px; text-align: center; background-color: #efefef; width: 90%;margin-left: calc(10% / 2);">
+        <p>
+            David Diaz Fontecha
+        </p>
+        <p>
+            <a href="mailto:ed.diazf@gmail.com">ed.diazf@gmail.com</a>   
+        </p>
+        <ul style="text-decoration: none!; padding: 0;">
+            <li style="padding: 0 8px; display: inline-block;"><a href="https://facebok.com/zadiaz11">Facebook</a></li>
+            <li style="padding: 0 8px; display: inline-block;"><a href="https://instagram.com/zadiaz11">Instagram</a></li>
+        </ul>
         
-
+        
     </footer>
 </body>
 </html>
